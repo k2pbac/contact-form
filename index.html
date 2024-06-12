@@ -52,13 +52,14 @@
           <input type="email" class="form-control" id="email" />
         </div>
         <div class="row">
-          <label for="checkbox" class="form-label">Query Type</label>
+          <label for="radio" class="form-label">Query Type</label>
           <div class="col check-container">
             <input
-              class="form-check-input checkbox"
-              type="checkbox"
+              class="form-check-input radio"
+              type="radio"
               value=""
               id="general"
+              name="query-type"
             />
             <label class="form-check-label" for="general">
               General Enquiry
@@ -66,10 +67,11 @@
           </div>
           <div class="col check-container">
             <input
-              class="form-check-input checkbox"
-              type="checkbox"
+              class="form-check-input radio"
+              type="radio"
               value=""
               id="support"
+              name="query-type"
             />
             <label class="form-check-label" for="support">
               Support Request
@@ -96,7 +98,7 @@
             I consent to being contacted by the team
           </label>
         </div>
-        <button type="submit" class="btn btn-primary custom-button">
+        <button type="submit" class="btn btn-sm btn-primary custom-button">
           Submit
         </button>
       </form>
