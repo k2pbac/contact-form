@@ -29,7 +29,7 @@ label {
 form {
   display: flex;
   flex-direction: column;
-  height: 640px;
+  max-height: 720px;
   background: white;
   padding: 30px;
   margin: 40px;
@@ -37,6 +37,7 @@ form {
   padding-right: 40px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 4px;
+  max-width: 489px;
 }
 
 .custom-button {
@@ -66,4 +67,53 @@ h1 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.check-container:has(> .form-check-input:valid:checked) {
+  background: #1987544a;
+  border: 1px solid var(--bs-form-valid-color);
+}
+
+.form-check-input.is-invalid ~ .form-check-label,
+.was-validated .form-check-input:invalid ~ .form-check-label {
+  color: rgb(97 95 95) !important;
+}
+
+.form-check-input.is-valid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: rgb(97 95 95) !important;
+}
+
+.invalid-feedback {
+  font-size: 11px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.form-check-input {
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 6px;
+  margin-top: 0.35em;
+}
+
+.form-check-input:checked {
+  border-color: rgb(65 110 93) !important;
+  background-color: rgb(65 110 93) !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: green !important;
+}
+
+input:not([type="radio"]):hover,
+textarea:hover,
+label,
+.check-container:hover {
+  cursor: pointer;
+  border-color: green !important;
+}
+
+input:hover {
+  cursor: pointer;
 }
