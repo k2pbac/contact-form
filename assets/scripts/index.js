@@ -14,11 +14,14 @@
           event.stopPropagation();
         }
 
+        if (form.checkValidity()) {
+          event.preventDefault();
+          document.querySelector(".container").classList.add("success");
+          document.querySelector(".alert").style.visibility = "visible";
+          clearElements();
+          return;
+        }
         form.classList.add("was-validated");
-        clearElements();
-        event.preventDefault();
-        document.querySelector(".container").classList.add("success");
-        document.querySelector(".alert").style.visibility = "visible";
       },
       false
     );

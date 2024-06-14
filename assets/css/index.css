@@ -3,19 +3,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   font-family: "Karla-Bold";
   color: rgb(97 95 95);
   background-image: url("../images/background2.jpeg");
   background-size: contain;
   background-position: center;
 }
-
+sup {
+  color: red;
+}
 .container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
   background-color: rgb(157 166 179);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   max-width: 960px;
@@ -29,7 +28,6 @@ label {
 form {
   display: flex;
   flex-direction: column;
-  max-height: 720px;
   background: white;
   padding: 30px;
   margin: 40px;
@@ -93,6 +91,7 @@ h1 {
   width: 0.8em;
   height: 0.8em;
   margin-right: 6px;
+  margin-left: 6px;
   margin-top: 0.35em;
 }
 
@@ -145,4 +144,25 @@ input:hover {
   font-size: 12px;
   margin-top: 9px;
   color: #ffffffa3;
+}
+
+@media only screen and (max-width: 576px) {
+  form {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+    padding-top: 0;
+    position: relative;
+  }
+  .name-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .query-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .consent-label {
+    width: 70%;
+  }
 }
