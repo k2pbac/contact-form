@@ -38,7 +38,7 @@
       <form class="needs-validation" novalidate>
         <h1>Contact Us</h1>
         <div class="mb-3">
-          <div class="row">
+          <div class="row name-container">
             <div class="col">
               <label for="first-name" class="form-label"
                 >First Name <sup>*</sup></label
@@ -74,7 +74,7 @@
           <input type="email" class="form-control" id="email" required />
           <div class="invalid-feedback">Please enter a valid email address</div>
         </div>
-        <div class="row">
+        <div class="row query-container">
           <label for="radio" class="form-label">Query Type <sup>*</sup></label>
           <div class="col check-container" onclick="forceCheck('general')">
             <input
@@ -130,7 +130,7 @@
             id="consent"
             required
           />
-          <label class="form-check-label" for="consent">
+          <label class="consent-label form-check-label" for="consent">
             I consent to being contacted by the team <sup>*</sup>
           </label>
           <div class="invalid-feedback mb-3">
@@ -140,14 +140,15 @@
         <button type="submit" class="btn btn-primary custom-button">
           Submit
         </button>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Kris Bachan</a>.
+        </div>
       </form>
     </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Kris Bachan</a>.
-    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
