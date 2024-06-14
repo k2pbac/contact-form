@@ -121,3 +121,28 @@ input:hover {
 .success {
   background-color: #bbd8ba;
 }
+
+.alert p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 12px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+}
+
+.alert {
+  position: absolute;
+  top: 16px;
+  background: #143635;
+  border-radius: 16px;
+  color: white;
+  visibility: hidden;
+}
+
+.alert p span {
+  font-size: 12px;
+  margin-top: 9px;
+  color: #ffffffa3;
+}

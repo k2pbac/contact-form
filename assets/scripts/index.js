@@ -18,6 +18,7 @@
         clearElements();
         event.preventDefault();
         document.querySelector(".container").classList.add("success");
+        document.querySelector(".alert").style.visibility = "visible";
       },
       false
     );
