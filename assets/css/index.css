@@ -117,3 +117,7 @@ label,
 input:hover {
   cursor: pointer;
 }
+
+.success {
+  background-color: #bbd8ba;
+}

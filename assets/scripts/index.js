@@ -15,6 +15,9 @@
         }
 
         form.classList.add("was-validated");
+        clearElements();
+        event.preventDefault();
+        document.querySelector(".container").classList.add("success");
       },
       false
     );
@@ -23,4 +26,11 @@
 
 function forceCheck(el) {
   document.querySelector("#" + el).click();
+}
+
+function clearElements() {
+  document.querySelectorAll("form").forEach((el) => {
+    el.reset();
+    el.classList.remove("was-validated");
+  });
 }
