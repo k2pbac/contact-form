@@ -138,6 +138,7 @@ input:hover {
   border-radius: 16px;
   color: white;
   visibility: hidden;
+  z-index: 99;
 }
 
 .alert p span {
